@@ -1,0 +1,46 @@
+
+/*animaciones/transiciones*/
+nav ul li {
+    transition: $trans-basic
+}
+
+nav ul li:hover {
+    border-bottom: 1px solid white;
+}
+
+.div-zoom {
+    transition: $trans-basic
+}
+
+.div-zoom:hover {
+    transform: scale(1.1);
+}
+
+.micro-menu ul li {
+    transition: $trans-basic
+}
+
+.micro-menu ul li:hover {
+    border-bottom: 1px solid white;
+}
+
+footer div img {
+    transition: $trans-basic
+}
+
+footer div img:hover {
+    transform: scale(1.05);
+}
+
+#logo-home {
+    animation-name: giro;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-delay: 3s;
+}
+
+@keyframes giro {
+    0% {rotate: 180deg;}
+}
+

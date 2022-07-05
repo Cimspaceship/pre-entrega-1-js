@@ -1,0 +1,43 @@
+/******MOBILE 768PX PRIMER MEDIA QUERIE*****/
+
+@media screen and (min-width:768px) {
+
+    /**HEADER**/
+  header {
+      display:flex;
+  }
+  
+  /**FOOTER**/
+  
+  /*menucito y footer*/
+  footer {
+      flex-direction: row;
+  
+      div {
+          display: flex;
+          flex-direction: column;
+          width: 25%;
+          align-items: center;
+          justify-content: center;
+      }
+  
+      img {
+          max-width: 55%;
+          padding: 5px;
+          }
+  }
+  
+  /*PRODUCTS*/
+  .catalogo-products {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  
+  /*PC BUILD*/
+  
+  .pcbuild-step2-amd {
+      flex-direction: row;
+  }
+  
+  
+  }

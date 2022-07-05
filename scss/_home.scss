@@ -1,0 +1,60 @@
+/*nucleo de productos en home*/
+
+$margin: 25px;
+
+.home-image {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        margin-top: $margin;
+        margin-bottom: $margin;
+        margin-left: $margin/5;
+        margin-right: $margin/5;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/*grid index*/
+.main-wrapper-index {
+    display: grid;
+    grid-template-areas:
+    
+    "nav"
+    "header"
+    "main"
+    "footer"
+    ;
+}
+nav {
+    grid-area: nav;
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+

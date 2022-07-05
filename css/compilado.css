@@ -1,0 +1,376 @@
+/*variables*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**CORE**/
+/*evita borde blanco*/
+body {
+  background-color: whitesmoke; }
+
+/*para que se ajusten las imagenes (ver banner ej)*/
+img {
+  height: auto;
+  max-width: 100%; }
+
+/**ESTETICA TITULOS**/
+h1 {
+  border-bottom: solid black;
+  padding: 15px;
+  margin-top: 15px; }
+
+h2 {
+  border-bottom: solid black;
+  padding: 15px;
+  margin-top: 15px; }
+
+h3 {
+  height: fit-content;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-top: 15px; }
+
+h4 {
+  font-family: sans-serif;
+  font-weight: 600;
+  width: fit-content;
+  flex-wrap: wrap; }
+
+.title-primario {
+  font-weight: 750;
+  font-family: sans-serif; }
+
+.title-secundario {
+  font-weight: 700;
+  font-family: sans-serif; }
+
+.title-terciario {
+  font-weight: 600;
+  font-family: sans-serif; }
+
+/**NAV**/
+nav ul {
+  align-items: center; }
+
+nav a {
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 10px;
+  font-size: 20px; }
+
+.navbar-brand {
+  margin: 0px; }
+
+/**HEADER**/
+header {
+  display: none; }
+
+/**FOOTER**/
+/*menucito y footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap; }
+  footer div {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px; }
+  footer img {
+    max-width: 20%;
+    height: auto; }
+  footer li {
+    margin: 8px; }
+  footer a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white; }
+
+/*nucleo de productos en home*/
+.home-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .home-image div {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    margin-right: 5px; }
+  .home-image h3 {
+    text-align: center; }
+  .home-image img {
+    max-width: 100%;
+    height: auto; }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/*grid index*/
+.main-wrapper-index {
+  display: grid;
+  grid-template-areas: "nav" "header" "main" "footer"; }
+
+nav {
+  grid-area: nav; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
+/**PRODUCTS**/
+/*tabla de lista productos*/
+table {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  display: flex; }
+  table td {
+    padding: 4px; }
+  table h2 {
+    display: flex;
+    justify-content: center; }
+
+.main-wrapper-products {
+  display: grid;
+  grid-template-areas: "nav" "main" "footer"; }
+
+.menu-products {
+  grid-area: main;
+  display: flex;
+  justify-content: center; }
+
+/*catalogo productos*/
+.titulo-productos-variable {
+  border: none;
+  justify-content: center;
+  font-size: 25px; }
+
+.catalogo-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .catalogo-products div {
+    margin: 30px; }
+
+/**PC-BUILD**/
+/*invento de arma tu pc y la pag extra*/
+.pcbuild, .pcbuild-step2-amd {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .pcbuild h2, .pcbuild-step2-amd h2 {
+    border-bottom: none; }
+
+.pcbuild-step2-amd {
+  justify-content: center; }
+  .pcbuild-step2-amd div {
+    margin: 25px; }
+  .pcbuild-step2-amd h3 {
+    text-align: center; }
+
+/**LOGIN**/
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .login h2 {
+    border-bottom: none; }
+  .login input {
+    margin: 5px; }
+
+/*animaciones/transiciones*/
+nav ul li {
+  transition: all 0.3s ease-in-out; }
+
+nav ul li:hover {
+  border-bottom: 1px solid white; }
+
+.div-zoom {
+  transition: all 0.3s ease-in-out; }
+
+.div-zoom:hover {
+  transform: scale(1.1); }
+
+.micro-menu ul li {
+  transition: all 0.3s ease-in-out; }
+
+.micro-menu ul li:hover {
+  border-bottom: 1px solid white; }
+
+footer div img {
+  transition: all 0.3s ease-in-out; }
+
+footer div img:hover {
+  transform: scale(1.05); }
+
+#logo-home {
+  animation-name: giro;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+  animation-delay: 3s; }
+
+@keyframes giro {
+  0% {
+    rotate: 180deg; } }
+
+/******MOBILE 768PX PRIMER MEDIA QUERIE*****/
+@media screen and (min-width: 768px) {
+  /**HEADER**/
+  header {
+    display: flex; }
+  /**FOOTER**/
+  /*menucito y footer*/
+  footer {
+    flex-direction: row; }
+    footer div {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      align-items: center;
+      justify-content: center; }
+    footer img {
+      max-width: 55%;
+      padding: 5px; }
+  /*PRODUCTS*/
+  .catalogo-products {
+    flex-direction: row;
+    flex-wrap: wrap; }
+  /*PC BUILD*/
+  .pcbuild-step2-amd {
+    flex-direction: row; } }
+
+/******1024px*****/
+@media screen and (min-width: 1024px) {
+  /**START INDEX**/
+  /*sirve para centrar los items del navbar, sin esto se va para la izquierda porque la lista crece*/
+  #navbarSupportedContent {
+    flex-grow: 0; }
+  /**MAIN**/
+  /*nucleo de productos en home*/
+  .home-image {
+    flex-direction: row; }
+  .row {
+    flex-direction: row; }
+  /*grid index*/
+  .main-wrapper-index {
+    display: grid;
+    grid-template-areas: "nav nav" "header header" "main main" "footer footer"; }
+  /**FOOTER**/
+  /*menucito y footer*/
+  footer {
+    flex-direction: row; }
+    footer div {
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 15px;
+      width: 25%; }
+    footer img {
+      max-width: 50%; }
+    footer li {
+      margin: 8px; }
+  /**PRODUCTS**/
+  /*tabla de lista productos*/
+  table {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex; }
+    table td {
+      padding: 4px; }
+  .main-wrapper-products {
+    display: grid;
+    grid-template-areas: "nav nav" "main main" "footer footer";
+    grid-template-columns: 1fr 5fr; }
+  .menu-products {
+    grid-area: main;
+    display: flex;
+    justify-content: center; }
+  .titulo-productos-variable {
+    border: none;
+    justify-content: center;
+    font-size: 25px; }
+  .catalogo-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  /**PC-BUILD**/
+  /*invento de arma tu pc y la pag extra*/
+  .pcbuild, .pcbuild-step2-amd {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .pcbuild div, .pcbuild-step2-amd div {
+      margin: 20px; }
+    .pcbuild h2, .pcbuild-step2-amd h2 {
+      border-bottom: none; }
+  .pcbuild-step2-amd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .pcbuild-step2-amd h3 {
+      text-align: center; }
+  /**LOGIN**/
+  .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .login h2 {
+      border-bottom: none; }
+  input {
+    margin: 5px; } }

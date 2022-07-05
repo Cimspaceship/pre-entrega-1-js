@@ -1,0 +1,168 @@
+
+/******1024px*****/
+@media screen and (min-width:1024px) {
+
+/**START INDEX**/
+
+/*sirve para centrar los items del navbar, sin esto se va para la izquierda porque la lista crece*/
+#navbarSupportedContent {
+    flex-grow: 0;
+}
+
+/**MAIN**/
+
+/*nucleo de productos en home*/
+.home-image {
+    flex-direction: row;
+}
+.row {
+    flex-direction: row;
+}
+
+/*grid index*/
+.main-wrapper-index {
+    display: grid;
+    grid-template-areas:
+    
+    "nav nav"
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+}
+
+
+/**FOOTER**/
+
+/*menucito y footer*/
+footer {
+    flex-direction: row;
+
+    div {
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 15px;
+        width: 25%;
+    }
+
+    img {
+        max-width: 50%;
+        }
+
+    li {
+        margin: 8px;
+        }
+}
+
+
+
+/**PRODUCTS**/
+/*tabla de lista productos*/
+table {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+
+    td {
+        padding: 4px;
+        }
+}
+
+
+
+.main-wrapper-products {
+    display: grid;
+    grid-template-areas:
+    "nav nav"
+    "main main"
+    "footer footer"
+    ;
+    grid-template-columns: 1fr 5fr;
+}
+
+.menu-products {
+    grid-area: main;
+    display: flex;
+    justify-content: center; 
+}
+
+.titulo-productos-variable {
+    border: none;
+    justify-content: center;
+    font-size: 25px;
+
+}
+
+.catalogo-products {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+/**PC-BUILD**/
+
+/*invento de arma tu pc y la pag extra*/
+
+.pcbuild {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    div {
+        margin: 20px;
+    }
+
+    h2 {
+        border-bottom: none;
+    }
+}
+
+
+.pcbuild-step2-amd {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        text-align: center;
+    }
+}
+
+
+/**LOGIN**/
+.login {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+
+    h2 {
+        border-bottom: none;
+    }
+
+}
+
+input {
+    margin: 5px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

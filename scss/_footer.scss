@@ -1,0 +1,33 @@
+
+/**FOOTER**/
+/*menucito y footer*/
+
+footer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    div {
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        margin: 15px;
+    }
+
+    img {
+        max-width: 20%;
+        height: auto;
+        }
+
+    li {
+        margin: 8px;
+        }
+        
+     a {
+        text-decoration: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         color: white;
+        }    
+}
+

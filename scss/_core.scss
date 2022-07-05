@@ -1,0 +1,59 @@
+/**CORE**/
+
+/*evita borde blanco*/
+body {
+    background-color: whitesmoke;
+}
+/*para que se ajusten las imagenes (ver banner ej)*/
+
+@mixin size {
+    height: auto;
+    max-width: 100%;
+}
+    
+img {
+    @include size;
+  }
+
+/**ESTETICA TITULOS**/
+
+h1 {
+    border-bottom: solid black;
+    padding: 15px;
+    margin-top: 15px;
+    
+}
+
+h2 {
+    border-bottom: solid black;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+h3 {
+    height:fit-content;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+h4 {
+    font-family: sans-serif;
+    font-weight: 600;
+    width:fit-content;
+    flex-wrap: wrap;
+}
+
+
+$titles: (
+    primario: 750,
+    secundario: 700,
+    terciario: 600,
+);
+
+@each $title, $font-weight in $titles {
+    .title-#{$title} {
+        font-weight: $font-weight;
+        font-family: sans-serif;
+    }
+}
